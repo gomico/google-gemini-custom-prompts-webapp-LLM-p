@@ -400,10 +400,10 @@
     let model;
     if (modelx) {
       const generationConfig = {}; 
-      model = genAI.getGenerativeModel({ model: "gemini-pro" }, generationConfig);
+      model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" }, generationConfig);
     } else {
       console.log("not here");
-      model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
     }
 
     const result = await model.generateContent(prompt);
