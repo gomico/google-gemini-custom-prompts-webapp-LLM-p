@@ -422,10 +422,10 @@
     let model;
     if (modelx) {
       const generationConfig = {}; 
-      model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" }, generationConfig);
+      model = genAI.getGenerativeModel({ model: "gemini-pro" }, generationConfig);
     } else {
       console.log("not here");
-      model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
+      model = genAI.getGenerativeModel({ model: "gemini-pro" });
     }
 
     const result = await model.generateContent(prompt);
